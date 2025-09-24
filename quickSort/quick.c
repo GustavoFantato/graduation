@@ -6,7 +6,7 @@ void quick(int *vetor, int c, int f){
         return ; // se o ponteiro do comeco for maior que o do fim, retorna
     }
     
-    int m = (c + f) / 2; // calcula o meio
+    int m = c + (rand() % (f - c + 1)); // calcula o pivo de forma aleatoria
     int p = vetor[m]; // atribui pro pivo o meio do vetor
     int i = c; // "ponteiro" auxiliar para o comeco
     int j = f; // "ponteiro" auxiliar para o fim
